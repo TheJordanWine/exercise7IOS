@@ -51,7 +51,8 @@ class PlaceDescription {
         self.lattitude = 1234
         self.longitude = 1234
         
-        //Parse JSON string        let jsonData : Data
+        //Parse JSON string
+        let jsonData : Data
         jsonData = jsonString.data(using: .utf8)!
         let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
         if let dictionary = json as? [String: Any] {
