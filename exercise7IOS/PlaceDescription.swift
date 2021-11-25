@@ -69,4 +69,20 @@ class PlaceDescription {
         }
     }
     
+    func toJsonString()  -> String {
+        var js: String
+        js = ""
+        js.append("{")
+        js.append("\"name\" : \"\(name),")
+        js.append("\"description\" : \"\(description),")
+        js.append("\"category\" : \"\(category),")
+        js.append("\"address-title\" : \"\(addressTitle),")
+        js.append("\"address-street\" : \"\(addressStreet),")
+        js.append("\"elevation\" : \(elevation),")
+        js.append("\"lattitude\" : \(lattitude),")
+        js.append("\"longitude\" : \(longitude)}")
+        
+        return js
+    }
+    
 }
