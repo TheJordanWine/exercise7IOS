@@ -16,6 +16,7 @@
 		C37E2197275007F70042F05F /* exercise7IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E2196275007F70042F05F /* exercise7IOSTests.swift */; };
 		C37E21A1275007F70042F05F /* exercise7IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E21A0275007F70042F05F /* exercise7IOSUITests.swift */; };
 		C37E21A3275007F70042F05F /* exercise7IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E21A2275007F70042F05F /* exercise7IOSUITestsLaunchTests.swift */; };
+		C37E21B0275010CD0042F05F /* PlaceDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E21AF275010CD0042F05F /* PlaceDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C37E219C275007F70042F05F /* exercise7IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exercise7IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37E21A0275007F70042F05F /* exercise7IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise7IOSUITests.swift; sourceTree = "<group>"; };
 		C37E21A2275007F70042F05F /* exercise7IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise7IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C37E21AF275010CD0042F05F /* PlaceDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				C37E2188275007F60042F05F /* Assets.xcassets */,
 				C37E218A275007F60042F05F /* LaunchScreen.storyboard */,
 				C37E218D275007F60042F05F /* Info.plist */,
+				C37E21AF275010CD0042F05F /* PlaceDescription.swift */,
 			);
 			path = exercise7IOS;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				C37E2184275007F40042F05F /* ViewController.swift in Sources */,
 				C37E2180275007F40042F05F /* AppDelegate.swift in Sources */,
+				C37E21B0275010CD0042F05F /* PlaceDescription.swift in Sources */,
 				C37E2182275007F40042F05F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
