@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C35CB587275194C8005B5E4D /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35CB586275194C8005B5E4D /* NewPlaceViewController.swift */; };
 		C37E2180275007F40042F05F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E217F275007F40042F05F /* AppDelegate.swift */; };
 		C37E2182275007F40042F05F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E2181275007F40042F05F /* SceneDelegate.swift */; };
 		C37E2184275007F40042F05F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E2183275007F40042F05F /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C35CB586275194C8005B5E4D /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		C37E217C275007F40042F05F /* exercise7IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercise7IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37E217F275007F40042F05F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37E2181275007F40042F05F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				C3B783982751577D00DD80B8 /* PlaceTableViewController.swift */,
 				C3B7839A27515D9B00DD80B8 /* placeTableViewControllerRealTableViewController.swift */,
 				C3B7839C2751681000DD80B8 /* PlaceDetailTableViewController.swift */,
+				C35CB586275194C8005B5E4D /* NewPlaceViewController.swift */,
 			);
 			path = exercise7IOS;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				C37E2180275007F40042F05F /* AppDelegate.swift in Sources */,
 				C37E21B0275010CD0042F05F /* PlaceDescription.swift in Sources */,
 				C3B7839B27515D9B00DD80B8 /* placeTableViewControllerRealTableViewController.swift in Sources */,
+				C35CB587275194C8005B5E4D /* NewPlaceViewController.swift in Sources */,
 				C37E2182275007F40042F05F /* SceneDelegate.swift in Sources */,
 				C3B783992751577D00DD80B8 /* PlaceTableViewController.swift in Sources */,
 			);

@@ -41,6 +41,17 @@ class PlaceDescription {
     var latitude: Float
     var longitude: Float
     
+    init() {
+        self.name="name"
+        self.description = "description"
+        self.category = "category"
+        self.addressTitle = "addressTitle"
+        self.addressStreet = "addressStreet"
+        self.elevation = 1234
+        self.latitude = 1234
+        self.longitude = 1234
+    }
+    
     init(jsonString: String) {
         self.name="name"
         self.description = "description"
