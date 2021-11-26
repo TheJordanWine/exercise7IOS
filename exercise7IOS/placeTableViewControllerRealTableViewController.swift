@@ -44,6 +44,21 @@ class placeTableViewControllerRealTableViewController: UITableViewController {
         return cell
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewDidDisappear")
+    }
 
     /*
     // Override to support conditional editing of the table view.

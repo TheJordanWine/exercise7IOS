@@ -25,6 +25,22 @@ class PlaceTableViewController: UITableViewController {
         return places.count
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewDidDisappear")
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         

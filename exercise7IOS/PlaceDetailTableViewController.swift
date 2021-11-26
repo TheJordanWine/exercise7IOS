@@ -33,7 +33,22 @@ class PlaceDetailTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 8 // number of elements of a PlaceDescription
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NSLog("\(type(of: self)), viewDidDisappear")
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "placeDetailCell", for: indexPath)
