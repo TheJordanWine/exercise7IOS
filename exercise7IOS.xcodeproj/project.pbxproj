@@ -17,6 +17,8 @@
 		C37E21A1275007F70042F05F /* exercise7IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E21A0275007F70042F05F /* exercise7IOSUITests.swift */; };
 		C37E21A3275007F70042F05F /* exercise7IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E21A2275007F70042F05F /* exercise7IOSUITestsLaunchTests.swift */; };
 		C37E21B0275010CD0042F05F /* PlaceDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E21AF275010CD0042F05F /* PlaceDescription.swift */; };
+		C3B783992751577D00DD80B8 /* placeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B783982751577D00DD80B8 /* placeTableViewController.swift */; };
+		C3B7839B27515D9B00DD80B8 /* placeTableViewControllerRealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7839A27515D9B00DD80B8 /* placeTableViewControllerRealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		C37E21A0275007F70042F05F /* exercise7IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise7IOSUITests.swift; sourceTree = "<group>"; };
 		C37E21A2275007F70042F05F /* exercise7IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise7IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C37E21AF275010CD0042F05F /* PlaceDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDescription.swift; sourceTree = "<group>"; };
+		C3B783982751577D00DD80B8 /* placeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeTableViewController.swift; sourceTree = "<group>"; };
+		C3B7839A27515D9B00DD80B8 /* placeTableViewControllerRealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeTableViewControllerRealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				C37E218A275007F60042F05F /* LaunchScreen.storyboard */,
 				C37E218D275007F60042F05F /* Info.plist */,
 				C37E21AF275010CD0042F05F /* PlaceDescription.swift */,
+				C3B783982751577D00DD80B8 /* placeTableViewController.swift */,
+				C3B7839A27515D9B00DD80B8 /* placeTableViewControllerRealTableViewController.swift */,
 			);
 			path = exercise7IOS;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 				C37E2184275007F40042F05F /* ViewController.swift in Sources */,
 				C37E2180275007F40042F05F /* AppDelegate.swift in Sources */,
 				C37E21B0275010CD0042F05F /* PlaceDescription.swift in Sources */,
+				C3B7839B27515D9B00DD80B8 /* placeTableViewControllerRealTableViewController.swift in Sources */,
 				C37E2182275007F40042F05F /* SceneDelegate.swift in Sources */,
+				C3B783992751577D00DD80B8 /* placeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

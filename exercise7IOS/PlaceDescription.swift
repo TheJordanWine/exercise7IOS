@@ -38,7 +38,7 @@ class PlaceDescription {
     var addressTitle: String
     var addressStreet: String
     var elevation: Float
-    var lattitude: Float
+    var latitude: Float
     var longitude: Float
     
     init(jsonString: String) {
@@ -48,24 +48,27 @@ class PlaceDescription {
         self.addressTitle = "addressTitle"
         self.addressStreet = "addressStreet"
         self.elevation = 1234
-        self.lattitude = 1234
+        self.latitude = 1234
         self.longitude = 1234
         
         //Parse JSON string
-        let jsonData : Data
-        jsonData = jsonString.data(using: .utf8)!
-        let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
-        if let dictionary = json as? [String: Any] {
-            if let name = (dictionary["name"] as? String) {
-                self.name = name
-                self.description = dictionary["description"] as! String
-                self.category = dictionary["category"] as! String
-                self.addressTitle = dictionary["address-title"] as! String
-                self.addressStreet = dictionary["address-street"] as! String
-                self.elevation = dictionary["elevation"] as! Float
-                self.lattitude = dictionary["lattitude"] as! Float
-                self.longitude = dictionary["longitude"] as! Float
+        let jsonData = Data(jsonString.utf8)
+        do {
+            if let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] {
+                if let name = json["name"] as? String {
+                    self.name = name
+                    self.description = json["description"] as? String ?? ""
+                    self.category = json["category"] as? String ?? ""
+                    self.addressTitle = json["address-title"] as? String ?? ""
+                    self.addressStreet = json["address-street"] as? String ?? ""
+                    self.elevation = (json["elevation"] as? NSNumber)?.floatValue ?? 0
+                    self.latitude = (json["latitude"] as? NSNumber)?.floatValue ?? 0
+                    self.longitude = (json["longitude"] as? NSNumber)?.floatValue ?? 0
+                }
             }
+        } catch let error as NSError {
+            print("Faled to load: \(error.localizedDescription)")
+            print(String(describing: error))
         }
     }
     
@@ -79,7 +82,7 @@ class PlaceDescription {
         js.append("\"address-title\" : \"\(addressTitle),")
         js.append("\"address-street\" : \"\(addressStreet),")
         js.append("\"elevation\" : \(elevation),")
-        js.append("\"lattitude\" : \(lattitude),")
+        js.append("\"latitude\" : \(latitude),")
         js.append("\"longitude\" : \(longitude)}")
         
         return js
