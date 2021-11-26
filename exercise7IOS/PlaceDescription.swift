@@ -1,9 +1,3 @@
-//
-//  PlaceDescription.swift
-//  exercise7IOS
-//
-//  Created by  on 11/25/21.
-//
 /*
  * Copyright 2021 Jordan Wine,
  *
