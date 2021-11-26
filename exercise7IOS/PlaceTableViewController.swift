@@ -7,7 +7,7 @@
 
 import UIKit
 
-class placeTableViewController: UITableViewController {
+class PlaceTableViewController: UITableViewController {
     
     var places:[PlaceDescription] = [PlaceDescription(jsonString: "{\"name\" : \"ASU-Poly\",\"description\" : \"Home of ASU's Software Engineering Programs\",\"category\" : \"School\",\"address-title\" : \"ASU Software Engineering\",\"address-street\" : \"7171 E Sonoran Arroyo Mall\nPeralta Hall 230\nMesa AZ 85212\",\"elevation\" : 1384.0,\"latitude\" : 33.306388,\"longitude\" : -111.679121}")]
 

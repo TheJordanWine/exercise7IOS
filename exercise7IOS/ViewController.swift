@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var places: [PlaceDescription] = [PlaceDescription]()
+    var selectedPlaceIndex: Int = -1
+    
     @IBOutlet weak var tv: UITextView!
     
     

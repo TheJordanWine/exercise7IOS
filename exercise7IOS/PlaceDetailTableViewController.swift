@@ -1,5 +1,5 @@
 //
-//  placeTableViewControllerRealTableViewController.swift
+//  PlaceDetailTableViewController.swift
 //  exercise7IOS
 //
 //  Created by  on 11/26/21.
@@ -7,10 +7,11 @@
 
 import UIKit
 
-class placeTableViewControllerRealTableViewController: UITableViewController {
+class PlaceDetailTableViewController: UITableViewController {
     
-    var places:[PlaceDescription] = [PlaceDescription(jsonString: "{\"name\" : \"ASU-Poly\",\"description\" : \"Home of ASU's Software Engineering Programs\",\"category\" : \"School\",\"address-title\" : \"ASU Software Engineering\",\"address-street\" : \"7171 E Sonoran Arroyo Mall\\nPeralta Hall 230\\nMesa AZ 85212\",\"elevation\" : 1384.0,\"latitude\" : 33.306388,\"longitude\" : -111.679121}")]
-    
+    var places: [PlaceDescription] = [PlaceDescription]()
+    var selectedPlaceIndex: Int = -1
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,17 +31,26 @@ class placeTableViewControllerRealTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return places.count
+        return 8 // number of elements of a PlaceDescription
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "placeDetailCell", for: indexPath)
+        
+        // This is NOT the right way to do this.
+        let mirror = Mirror(reflecting: places[selectedPlaceIndex])
+        for (index, attr) in mirror.children.enumerated() {
+            if let prop_name = attr.label as String? {
+                if index == indexPath.row {
+                    cell.textLabel?.text = prop_name
+                    cell.detailTextLabel?.text = (attr.value as? String) ?? ""
+                }
+            }
+        }
 
         // Configure the cell...
-        let place:PlaceDescription = places[indexPath.row]
-        cell.textLabel?.text = place.name
-        // cell.detailTextLabel?.text = place.type
+
         return cell
     }
     
@@ -80,22 +90,14 @@ class placeTableViewControllerRealTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        
-        NSLog("segue identifier is \(segue.identifier)")
-        if segue.identifier == "PlaceDetail" {
-            let pdtvc:PlaceDetailTableViewController = segue.destination as! PlaceDetailTableViewController
-            let indexPath = self.tableView.indexPathForSelectedRow!
-            pdtvc.places = self.places
-            pdtvc.selectedPlaceIndex = indexPath.row
-        }
     }
-    
+    */
 
 }
